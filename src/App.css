@@ -1,0 +1,121 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+
+
+#bug {
+  background-color: #6da300;
+  border: 6px solid #84c400;
+}
+
+
+#dark {
+  background: #35303b;
+
+  border: 6px solid #5b5366;
+}
+
+
+
+#dragon {
+  background: #005eac;
+  border: 6px solid #0070ca;
+}
+
+
+
+#electric {
+  background: #d6b300;
+  border: 6px solid #fbd200;
+}
+
+#fairy {
+  background-color: #ca5abb;
+  border: 6px solid #fb8aec;
+}
+
+#fighting {
+  background-color: #c7245d;
+  border: 6px solid #e12c6a;
+}
+
+
+
+#fire {
+  background-color: #df8536;
+  border: 6px solid #ff983f;
+}
+
+
+
+#flying {
+  background: #677faa;
+  border: 6px solid #8aabe4;
+}
+
+
+
+#ghost {
+  background: #3e5894;
+  border: 6px solid #4b6ab3;
+}
+
+
+
+#grass {
+  background-color: #2ba03c;
+
+  border: 6px solid #35c04a;
+}
+
+
+
+#ground {
+  background-color: #c2602b;
+  border: 6px solid #e97333;
+}
+
+
+#ice {
+  background: #40b4a5;
+  border: 6px solid #4bd2c1;
+}
+
+
+
+#normal {
+  background-color: #6b7279;
+  border: 6px solid #929ba3;
+}
+
+
+
+#poison {
+  background-color: #8f53a3;
+  border: 6px solid #b668cf;
+}
+
+
+
+#psychic {
+  background: #e25a67;
+  border: 6px solid #ff6676;
+}
+
+
+
+#rock {
+  background: #ad9e75;
+  border: 6px solid #c9b787;
+}
+
+
+
+#steel {
+  background: #4f7f91;
+  border: 6px solid #598fa3;
+}
+
+
+#water {
+  background-color: #2f87ca;
+  border: 6px solid #3393dd;
+}
