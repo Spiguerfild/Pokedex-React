@@ -64,7 +64,7 @@ function App() {
 
         setTimeout(() => {
           setIsLoading(false)
-        }, 2000);
+        }, 1000);
 
       }
 
@@ -127,21 +127,21 @@ function App() {
               <Card id='nothing'
                 elevation={8}
                 sx={{
-                  maxWidth: 300,
-                  backgroundColor: '#dbdbdb',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  border: '3px solid #343a43',
-                  justifyContent: 'space-between',
-                  textAlign: 'center',
-                  padding: '10px',
-                  transition: '.3s',
                   width: '300px',
                   height: '320px',
+                  maxWidth: 300,
+                  padding: '10px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  textAlign: 'center',
+                  backgroundColor: '#dbdbdb',
+                  border: '3px solid #343a43',
+                  transition: '.3s',
                 }}
               >
-                <CardContent>
-                  <CircularProgress />
+                <CardContent >
+                  <CircularProgress size={80} sx={{ color: '#000' }} />
                 </CardContent>
               </Card>
             </Grid>
@@ -201,12 +201,12 @@ function App() {
                       alignItems: 'center',
                       padding: '24px 0px 0px 0px',
                       height: '100%',
-                      gap: '80px',
+                      gap: '50px',
                       fontStyle: 'italic',
 
                     }}>
 
-                      <img src={pokemon.sprites.other.dream_world.front_default} width={'60%'} alt="" />
+                      {pokemon.sprites.other.dream_world.front_default == null ? <Typography variant='h6' color={'#000'} >Imagem não informada</Typography> : <img src={pokemon.sprites.other.dream_world.front_default} width={'60%'} alt="" />}
                       <div style={{
                         display: 'flex',
                         flexDirection: 'column',
@@ -218,6 +218,7 @@ function App() {
                       }}>
 
                         <Information infoFst={'Nome'} infoSec={pokemon.name || 'não informado'} />
+                        <Information infoFst={'Tipo'} infoSec={pokemon.types[0].type.name || 'não informado'} />
                         <Information infoFst={'Altura'} infoSec={pokemon.height || 'não informado'} />
                         <Information infoFst={'Min base status'} infoSec={pokemon.stats[0].base_stat || 'não informado'} />
                         <Information infoFst={'Max base status'} infoSec={pokemon.stats[pokemon.stats.length - 1].base_stat || 'não informado'} />
