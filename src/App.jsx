@@ -74,8 +74,8 @@ function App() {
   return (
     <>
       <TopBar />
-      <Box sx={{ padding: '60px 0' }}>
 
+      <Box sx={{ padding: '60px 0' }}>
         <Grid container spacing={2} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           {/*Card do form  ------------------------------------------------------------------------------*/}
 
@@ -190,7 +190,7 @@ function App() {
                     // padding: '10px',
                     transition: '.3s',
                     width: '300px', // Definindo um valor específico para width no estado inicial
-                    // height: '350px', // Definindo um valor específico para height no estado inicial
+                    minHeight: 315, // Definindo um valor específico para height no estado inicial
                   }}
                 >
                   {pokemon.length === 0 ? "" :
@@ -234,7 +234,7 @@ function App() {
 
           }
         </Grid>
-      </Box>
+      </Box >
     </>
   )
 }
